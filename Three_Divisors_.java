@@ -1,7 +1,7 @@
 import java.util.*;
 public class Sample
 {
-    public static boolean isprime(int n)
+    public static boolean p(int n)
     {
         for(int i=2;i<=(int)Math.sqrt(n);i++)
         {
@@ -17,10 +17,10 @@ public class Sample
         m=mr.nextInt();
         for(int i=2;i<=(int)Math.sqrt(m);i++)
         {
-            if(isprime(i))
+            if(p(i))
                 c++;
         }
             System.out.println(c);
-        mr.close();
+            mr.close();
     }
 }
