@@ -1,11 +1,11 @@
 import java.util.*;
 public class Sample
 {
-    public static boolean p(int n)
+    public static boolean MR(int r)
     {
-        for(int i=2;i<=(int)Math.sqrt(n);i++)
+        for(int i=2;i<=(int)Math.sqrt(r);i++)
         {
-            if(n%i==0)
+            if(r%i==0)
             return false;
         }
         return true;
@@ -17,10 +17,9 @@ public class Sample
         m=mr.nextInt();
         for(int i=2;i<=(int)Math.sqrt(m);i++)
         {
-            if(p(i))
-                c++;
+            if(MR(i))
+            c++;
         }
-            System.out.println(c);
-            mr.close();
+        System.out.println(c);
     }
 }
